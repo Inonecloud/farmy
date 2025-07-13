@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: farmy
+  datasource:
+    url: jdbc:postgresql://localhost:5432/farmy
+    username: postgres
+    password: root
+
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  security:
+    user:
+      name: admin
+      password: test
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: auditevents,health,info
