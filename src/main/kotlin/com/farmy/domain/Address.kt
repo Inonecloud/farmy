@@ -21,6 +21,6 @@ data class Address(
     val house:String,
     val zipCode: String,
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "profile_id", insertable = false, updatable = true)
+    @JoinColumn(name = "profile_id", insertable = false, updatable = true )
     val profile: Profile? = null,
 )
