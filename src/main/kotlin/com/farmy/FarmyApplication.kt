@@ -1,4 +1,4 @@
-package com.farmy.farmy
+package com.farmy
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

@@ -1,0 +1,29 @@
+.container {
+  display: grid;
+  grid-template-columns: [start] 1fr 2fr 1fr[end];
+  grid-template-rows: [start] auto [signupstart]auto[signupend] 1fr[end];
+  gap: .5em;
+}
+
+header {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 1em;
+}
+
+.signup-input {
+  grid-column: 2;
+  grid-row: signupstart/signupend;
+}
+
+h2 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.5em;
+}
+
+.container {
+  border-radius: 3em;
+  background: #f7f7f7;
+}
+
+

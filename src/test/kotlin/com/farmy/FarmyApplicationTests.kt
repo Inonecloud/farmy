@@ -1,4 +1,4 @@
-package com.farmy.farmy
+package com.farmy
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

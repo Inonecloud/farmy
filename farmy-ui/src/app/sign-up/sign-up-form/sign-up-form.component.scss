@@ -1,0 +1,49 @@
+.form {
+  display: grid;
+  grid-template-columns: [start]auto 1fr 1fr[end];
+  grid-template-rows: auto 2fr 1fr[end];
+  padding: 1em;
+  gap: 1.25rem;
+}
+
+.input-group {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.actions {
+  grid-column: 3;
+  grid-row: end;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: "PT Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #76c0ae;
+  background-color: #83e6c0;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #aaf1d6;
+  }
+
+}

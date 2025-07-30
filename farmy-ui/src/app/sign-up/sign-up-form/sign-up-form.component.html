@@ -1,0 +1,57 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="input-group">
+    <p id="firstname-input">
+      <label for="firstname">First Name</label>
+      <input id="firstname"
+             name="firstname"
+             type="text"
+             [(ngModel)]="enteredFirstName"
+      />
+    </p>
+    <p id="lastname-input">
+      <label for="lastname">Last Name</label>
+      <input id="lastname"
+             name="lastname"
+             type="text"
+             [(ngModel)]="enteredLastName"
+      />
+    </p>
+    <p id="email-input">
+      <label for="email">Email</label>
+      <input id="email"
+             name="email"
+             type="email"
+             [(ngModel)]="enteredEmail"
+      />
+    </p>
+    <p id="phone-input">
+      <label for="phone">Phone</label>
+      <input id="phone"
+             name="phone"
+             type="tel"
+             [(ngModel)]="enteredPhone"
+      />
+    </p>
+    <p id="password-input">
+      <label for="password">Password</label>
+      <input id="password"
+             name="password"
+             type="password"
+             [(ngModel)]="enteredPassword"
+      />
+      <span class="error"></span>
+    </p>
+    <p id="repeated-password-input">
+      <label for="repeated-password">Repeat Password</label>
+      <input id="repeated-password"
+             name="repeated-password"
+             type="password"
+             [(ngModel)]="enteredRepeatedPassword"
+      />
+      <span class="error"></span>
+    </p>
+  </div>
+  <p class="actions">
+    <button type="submit">Sign Up</button>
+  </p>
+</form>
